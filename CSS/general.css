@@ -1,9 +1,10 @@
 :root {
     /* Farbpalette */
     --primary-color: #1a73e8;
-    --text-color: #202124;
-    --border-color: #dadce0;
-    --hover-color: #b8c2c7;
+    --text-color: rgb(32, 33, 36);
+    --border-color: #d4d4d4;
+    --hover-color: #eeeeee;
+    --secondary-background: #d8d7d7;
 
     /* Schriftarten */
     --font-sansation: "Sansation", "Roboto", -apple-system, sans-serif;
