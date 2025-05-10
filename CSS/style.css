@@ -1,0 +1,106 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    max-width: 100%;
+    padding: 0 10px 0 10px;
+    margin: 5px 0 0 0;
+} 
+
+.header_left {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    max-width: 50%;
+    gap: 20px;
+}
+
+.header_left a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 0.8rem;
+    font-weight: 800;
+    position: relative;
+}
+
+.header_left a::after {
+    content: "";
+    position: absolute;
+    bottom: -12px;
+    left: -4px;
+    width: 120%;
+    height: 2px;
+    background-color: var(--text-color);
+}
+
+.header_right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 50%;
+    gap: 10px;
+    align-items: center;
+    gap: 15px;
+}
+
+.menu_trigger {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    width: 100%;
+    padding: 8px;
+}
+
+.menu_trigger:hover {
+    background-color: var(--hover-color);
+    border-radius: 50%;
+    transition: all 0.2s ease;
+}
+
+.icon {
+    width: 1.8rem;
+    height: 1.8rem;
+    fill: var(--text-color);
+}
+
+.google_profile {
+position: relative;
+border-radius: 50%;
+padding: 0.18rem;
+}
+
+.google_profile::before {
+content: "";
+position: absolute;
+inset: 0;
+z-index: -1;
+background: conic-gradient(
+    #E53935 0deg 40deg,
+    #1565C0 40deg 145deg,
+    #2E7D32 135deg 235deg,
+    #FBC02D 235deg 300deg,
+    #E53935 300deg 360deg
+    );
+border-radius: 50%;
+padding: 2px;
+}
+.google_profile img {
+    max-width: 2.5em;
+    height: auto;
+    border-radius: 50%;
+    border: 2px solid white;
+}
+
+.google_profile img:hover {
+    border:2px solid var(--hover-color);
+    border-radius: 50%;
+    transition: all 0.2s ease;
+}
+
+
+
+
+
+/* *{
+    border: 1px solid red
+} */
