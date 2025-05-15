@@ -31,45 +31,44 @@
             <div class="header_right">
                 <input type="checkbox" id="menu_toggle" class="menu_checkbox">
                 <label for="menu_toggle" class="menu_trigger" aria-label="Menü öffnen">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="icon" height="" viewBox="0     -960 960 960" width="" fill=""><path d="M240-160q-33 0-56.5-23.5T160-240q0-33 23.5-56.5T240-320q33 0 56.5 23.5T320-240q0 33-23.5 56.5T240-160Zm240 0q-33 0-56.5-23.5T400-240q0-33 23.5-56.5T480-320q33 0 56.5 23.5T560-240q0 33-23.5 56.5T480-160Zm240 0q-33 0-56.5-23.5T640-240q0-33 23.5-56.5T720-320q33 0 56.5 23.5T800-240q0 33-23.5 56.5T720-160ZM240-400q-33 0-56.5-23.5T160-480q0-33 23.5-56.5T240-560q33 0 56.5 23.5T320-480q0 33-23.5 56.5T240-400Zm240 0q-33 0-56.5-23.5T400-480q0-33 23.5-56.5T480-560q33 0 56.5 23.5T560-480q0 33-23.5 56.5T480-400Zm240 0q-33 0-56.5-23.5T640-480q0-33 23.5-56.5T720-560q33 0 56.5 23.5T800-480q0 33-23.5 56.5T720-400ZM240-640q-33 0-56.5-23.5T160-720q0-33 23.5-56.5T240-800q33 0 56.5 23.5T320-720q0 33-23.5 56.5T240-640Zm240 0q-33 0-56.5-23.5T400-720q0-33 23.5-56.5T480-800q33 0 56.5 23.5T560-720q0 33-23.5 56.5T480-640Zm240 0q-33 0-56.5-23.5T640-720q0-33 23.5-56.5T720-800q33 0 56.5 23.5T800-720q0 33-23.5 56.5T720-640Z"/>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon" height="" viewBox="0 -960 960 960" width="" fill=""><path d="M240-160q-33 0-56.5-23.5T160-240q0-33 23.5-56.5T240-320q33 0 56.5 23.5T320-240q0 33-23.5 56.5T240-160Zm240 0q-33 0-56.5-23.5T400-240q0-33 23.5-56.5T480-320q33 0 56.5 23.5T560-240q0 33-23.5 56.5T480-160Zm240 0q-33 0-56.5-23.5T640-240q0-33 23.5-56.5T720-320q33 0 56.5 23.5T800-240q0 33-23.5 56.5T720-160ZM240-400q-33 0-56.5-23.5T160-480q0-33 23.5-56.5T240-560q33 0 56.5 23.5T320-480q0 33-23.5 56.5T240-400Zm240 0q-33 0-56.5-23.5T400-480q0-33 23.5-56.5T480-560q33 0 56.5 23.5T560-480q0 33-23.5 56.5T480-400Zm240 0q-33 0-56.5-23.5T640-480q0-33 23.5-56.5T720-560q33 0 56.5 23.5T800-480q0 33-23.5 56.5T720-400ZM240-640q-33 0-56.5-23.5T160-720q0-33 23.5-56.5T240-800q33 0 56.5 23.5T320-720q0 33-23.5 56.5T240-640Zm240 0q-33 0-56.5-23.5T400-720q0-33 23.5-56.5T480-800q33 0 56.5 23.5T560-720q0 33-23.5 56.5T480-640Zm240 0q-33 0-56.5-23.5T640-720q0-33 23.5-56.5T720-800q33 0 56.5 23.5T800-720q0 33-23.5 56.5T720-640Z"/>
                     </svg>
                 </label>
+                <label for="menu_toggle" class="overlay"></label> 
+                <div id="menu_grid" class="menu_grid">
+                    
+                    <a href="#" class="menu_item" aria-label="Google Drive">
+                        <img src="icons/drive.png" alt="Google Drive">
+                        <span class="sr-only">Drive</span>
+                    </a>
+                
+                    <a href="#" class="menu_item" aria-label="Google Mail">
+                        <img src="icons/gmail.png" alt="Google Mail">
+                        <span class="sr-only">Mail</span>
+                    </a>
+                
+                    <a href="#" class="menu_item" aria-label="Google Maps">
+                        <img src="icons/maps.png" alt="Google Maps">
+                        <span class="sr-only">Maps</span>
+                    </a>
+                
+                    <a href="#" class="menu_item" aria-label="Google Meet">
+                        <img src="icons/meet.png" alt="Google Meet">
+                        <span class="sr-only">Meet</span>
+                    </a>
+                
+                    <a href="#" class="menu_item" aria-label="Google Photos">
+                        <img src="icons/photos.png" alt="Google Photos">
+                        <span class="sr-only">Photos</span>
+                    </a> 
+                </div>
                 <div class="google_profile">
                     <a href="" class="profile_trigger" aria-label="Profil öffnen">
                         <img src="img/google_profile.jpg" alt="Profilbild" class="profile_img">
                     </a>
                 </div>
-            <div id="menu_grid" class="menu_grid">
-                <div class="overlay"></div>
-                <label for="menu_toggle" class="menu_close" aria-label="Menü schließen">X</label>
-                <a href="#" class="menu_item" aria-label="Google Drive">
-                    <img src="icons/drive.png" alt="Google Drive">
-                    <span class="sr-only">Drive</span>
-                </a>
-                <a href="#" class="menu_item" aria-label="Google Mail">
-                    <img src="icons/gmail.png" alt="Google Mail">
-                    <span class="sr-only">Mail</span>
-                </a>
-                <a href="#" class="menu_item" aria-label="Google Maps">
-                    <img src="icons/maps.png" alt="Google Maps">
-                    <span class="sr-only">Maps</span>
-                </a>
-                <a href="#" class="menu_item" aria-label="Google Meet">
-                    <img src="icons/meet.png" alt="Google Meet">
-                    <span class="sr-only">Meet</span>
-                </a>
-                <a href="#" class="menu_item" aria-label="Google Photos">
-                    <img src="icons/photos.png" alt="Google Photos">
-                    <span class="sr-only">Photos</span>
-                </a>
-                 
             </div>
         </div>
-       
-
-        
-        
     </header>
-    
 </body>
 </html>

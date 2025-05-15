@@ -17,9 +17,11 @@
     --max-content-width: 1200px;
 
     /* Z-Index */
-    --z-index-menu: 1000;
-    --z-index-overlay: 900;
+    --z-index-checkbox: 1000;
+    --z-index-menu: 999;
+    --z-index-overlay: 998;
     --z-index-header: 800;
+    
 }
 
 /* Box Modell für alle Elemente */
