@@ -112,7 +112,7 @@ padding: 2px;
     transform: translateY(-10px);
     transition: all 0.3s cubic-bezier(.62,.09,.51,1.06);
     will-change: opacity, transform;
-    position: absolute;
+    position: fixed;
     right: 0;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
