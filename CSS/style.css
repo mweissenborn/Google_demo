@@ -208,35 +208,109 @@ transition: all 0.2s ease;
 
 .search_container {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     margin: 20px auto;
     height: 2.8em;
     border: 1px solid var(--border-color);
     border-radius: 1.5rem;
     width: 90%;
-    
 }
 
 .item_left {
-    width: 1.5rem;
-    margin-left: 15px;
+    display: flex;
+    margin: 0 10px;
 }
 
-.search_field {
-    width: 100%;
+.search_input {
+    flex: 1;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    padding: 0 10px;
+    background: transparent;
     height: 100%;
-    align-items: stretch;
-
 }
 .items_right {
     display: flex;
     flex-direction: row;
     gap: 1rem;
-    margin-right: 20px;
-    width: 4rem;
+    margin: 0 10px;
 }
 
+.results {
+    display: grid;
+    grid-template-areas: "result_1"
+    "result_2";
+    grid-template-rows: 1fr 1fr;
+}
+
+.result_1 {
+    display: flex;
+    flex-direction: column;
+    border-top: 6px solid var(--border-color);
+    padding: 10px 20px;
+    grid-area: result_1;
+}
+
+.result_2 {
+    display: flex;
+    flex-direction: column;
+    border-top: 6px solid var(--border-color);
+    padding: 10px 20px;
+    grid-area: result_2;
+}
+
+.result_logo {
+    width: 30px;
+    height: auto;
+    border-radius: 50%;
+    border: 1px solid var(--border-color);
+}
+
+.result_header {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 15px;
+    
+}
+
+.header_title {
+    display: flex;
+    flex-direction: column;
+}
+
+.result_h4 {
+    margin-top: 12px;
+    font-weight: 400;
+    font-size: 0.9rem;
+}
+
+.result_url {
+    margin-top: -20px;
+    font-size: 0.7rem
+}
+
+.result_link {
+    text-decoration: none;
+    color: rgb(43, 43, 226);
+    font-size: 1.4rem;
+    font-weight: 400;
+}
+
+.result_link:hover {
+    text-decoration: underline;
+    color: var(--hover-color);
+}
+
+.description {
+    font-weight: 400;
+    font-size: 0.9rem;
+}
+
+.result_description {}
 /* *{
     border: 1px solid red
 } */
